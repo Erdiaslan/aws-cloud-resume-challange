@@ -1,5 +1,5 @@
 // Typewriter Effect with Loop
-const typewriterText = " Jr. Cloud Engineer ☁️";
+const typewriterText = "Cloud Engineer ☁️";
 const typewriterElement = document.getElementById('typewriter');
 let charIndex = 0;
 let isDeleting = false;
