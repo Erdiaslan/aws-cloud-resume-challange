@@ -116,50 +116,79 @@
       <!-- Projects -->
       <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
-
         <div class="project-item">
-          <h3>Fargate PoC</h3>
-          <div class="project-diagram">
-            <img
-              src="https://raw.githubusercontent.com/Erdiaslan/Fargate-poc/main/fargate-poc.jpeg"
-              alt="AWS ECS Fargate PoC Architecture Diagram"
-              style="width:100%; max-width:700px; margin-top:12px; border-radius:18px;"
-            />
-          </div>
-          <p>
-            A PoC showing how a Node.js app runs on ECS Fargate without managing servers, with CI/CD and managed networking components.
-          </p>
-          <a href="https://github.com/Erdiaslan/Fargate-poc" target="_blank" rel="noopener noreferrer" class="project-link">
-            → View on GitHub
-          </a>
+            <h3>Cloud Resume Challenge — Serverless Web Application</h3>
+            <div class="project-diagram">
+                <img 
+src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/cloud-resume-cha.jpeg"
+alt="Cloud Resume Challenge Architecture Diagram"
+style="width:100%; max-width:600px; margin-top:12px; border-radius:8px;"
+>
+            </div>
+            <p>This project is a fully serverless resume website built on AWS following the Cloud Resume Challenge. The frontend is hosted on S3 and delivered globally via CloudFront with SSL/TLS encryption. A visitor counter is implemented using API Gateway, Lambda, and DynamoDB, updating in real-time as users visit the site. The entire infrastructure is defined as code using Terraform and deployed through a CI/CD pipeline with GitHub Actions.</p>
+            
+            <ul>
+                <li>Amazon S3 — Static website hosting</li>
+                <li>Amazon CloudFront — Global CDN with SSL/TLS</li>
+                <li>AWS Certificate Manager — SSL certificate management</li>
+                <li>Amazon Route 53 — DNS and domain management</li>
+                <li>Amazon API Gateway — RESTful API endpoint</li>
+                <li>AWS Lambda (Python) — Serverless visitor counter logic</li>
+                <li>Amazon DynamoDB — NoSQL database for visitor count</li>
+                <li>Terraform — Infrastructure as Code (IaC)</li>
+                <li>GitHub Actions — CI/CD automation</li>
+            </ul>
+            <a href="https://github.com/Erdiaslan/cloud-resume-challenge" target="_blank" class="project-link">→ View on GitHub</a>
         </div>
 
         <div class="project-item">
-          <h3>Cloud Resume Challenge — Serverless Web Application</h3>
-          <div class="project-diagram">
-            <img
-              src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/cloud-resume-cha.jpeg"
-              alt="Cloud Resume Challenge Architecture Diagram"
-              style="width:100%; max-width:700px; margin-top:12px; border-radius:12px;"
-            />
-          </div>
-          <p>
-            A fully serverless resume website on AWS. CloudFront + S3 for hosting, Route 53 + ACM for domain/SSL, and a visitor counter using API Gateway + Lambda + DynamoDB.
-          </p>
+            <h3>Fargate PoC</h3>
+            <div class="project-diagram">
+                <img 
+src="https://raw.githubusercontent.com/Erdiaslan/Fargate-poc/main/fargate-poc.jpeg"
+alt="AWS ECS Fargate PoC Architecture Diagram"
+style="width:150%; max-width:600px; margin-top:12px; border-radius:18px;"
+>
+            </div>
+            <p>This PoC shows how a Node.js application is deployed on AWS ECS Fargate without managing servers. User traffic is secured and distributed via AWS managed services, the application runs in private subnets, connects to a managed database, and is deployed automatically through CI/CD.</p>
+
+            <ul> 
+                <li>Amazon CloudFront – CDN, SSL, caching</li>
+                <li>AWS WAF – Web application security</li>
+                <li>Application Load Balancer (ALB) – Traffic routing</li>
+                <li>Amazon VPC – Public & private subnet isolation</li>
+                <li>Amazon ECS (Fargate) – Serverless container runtime</li>
+                <li>Amazon ECR – Docker image registry</li>
+                <li>Amazon RDS (MySQL) – Managed relational database</li>
+                <li>NAT Gateway – Controlled outbound internet access</li>
+                <li>VPC Endpoints (ECR / S3) – Private AWS service access</li>
+                <li>Amazon CloudWatch – Logs, metrics, alarms</li>
+                <li>Amazon SNS – Alert notifications</li>
+            </ul>
+            <a href="https://github.com/Erdiaslan/Fargate-poc" target="_blank" class="project-link">→ View on GitHub</a>
+         
         </div>
 
         <div class="project-item">
-          <h3>AI Avatar — AI-Driven Video Automation</h3>
-          <div class="project-diagram">
-            <img
-              src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/PHOTO-2025-09-08-15-15-07.jpg"
-              alt="AI Avatar Serverless Pipeline Diagram"
-              style="width:100%; max-width:500px; margin-top:12px; border-radius:12px;"
-            />
-          </div>
-          <p>
-            A serverless pipeline triggered by EventBridge or API Gateway. Lambda generates content, stores assets in S3, calls Heygen, watermarks via ffmpeg, and notifies the platform via webhook.
-          </p>
+            <h3>AI Avatar — AI-Driven Video Automation</h3>
+            <div class="project-diagram">
+                <img 
+src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/PHOTO-2025-09-08-15-15-07.jpg"
+alt="AI Avatar Serverless Pipeline Diagram"
+style="width:100%; max-width:400px; margin-top:12px; border-radius:8px;"
+>
+            </div>
+            <p>This project is a serverless AI video generation pipeline. It is triggered by EventBridge (scheduled) or API Gateway (on-demand) and runs on AWS Lambda. Lambda generates personalized text with OpenAI, converts it to MP3, stores it in S3, and sends it to Heygen to create an avatar video. The video is watermarked using ffmpeg, saved to S3, and a webhook notifies the Imona platform when the video is ready.</p>
+            
+            <ul>
+                <li>EventBridge</li>
+                <li>API Gateway</li>
+                <li>AWS Lambda</li>
+                <li>OpenAI API</li>
+                <li>Amazon S3</li>
+                <li>Heygen API</li>                 
+                <li>Webhook (Imona Platform)</li>
+            </ul>
         </div>
       </section>
 
