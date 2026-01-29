@@ -1,188 +1,222 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erdi Aslan - Cloud Engineer</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erdi Aslan - Cloud Engineer</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <a href="#about" class="nav-item" data-icon="👤">About</a>
-            <a href="#skills" class="nav-item" data-icon="⚡">Skills</a>
-            <a href="#experience" class="nav-item" data-icon="💼">Work</a>
-            <a href="#projects" class="nav-item" data-icon="🚀">Projects</a>
-            <a href="#education" class="nav-item" data-icon="🎓">Study</a>
-            <a href="#certifications" class="nav-item" data-icon="🏆">Certs</a>
-        </nav>
+  <div class="container">
 
-        <main class="main-content">
-            <header class="header">
-                <h1>Erdi Aslan</h1>
-                <h2 id="typewriter" class="typewriter"></h2>
-                <div class="contact-info">
-                    <div class="contact-item">📍 İstanbul, Turkey</div>
-                    <div class="contact-item">📧 <a href="/cdn-cgi/l/email-protection#b8ddcadcd1d9cb8b8b8bddd9f8dfd5d9d1d496dbd7d5"><span class="__cf_email__" data-cfemail="3a5f485e535b490909095f5b7a5d575b535614595557">[email&#160;protected]</span></a></div>
-                    <div class="contact-item">📱 +90 546 559 0822</div>
-                    <div class="contact-item">🔗 <a href="https://github.com/Erdiaslan" target="_blank">GitHub</a></div>
-                    <div class="contact-item">💼 <a href="https://www.linkedin.com/in/erdiaslan-073a99211/" target="_blank">LinkedIn</a></div>
-                    <div class="contact-item">👀 Visitors: <span id="counter">Loading...</span></div>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <a href="#about" class="nav-item" data-icon="👤">About</a>
+      <a href="#skills" class="nav-item" data-icon="⚡">Skills</a>
+      <a href="#experience" class="nav-item" data-icon="💼">Work</a>
+      <a href="#projects" class="nav-item" data-icon="🚀">Projects</a>
+      <a href="#education" class="nav-item" data-icon="🎓">Study</a>
+      <a href="#certifications" class="nav-item" data-icon="🏆">Certs</a>
+    </nav>
 
-                </div>
-            </header>
+    <!-- Main -->
+    <main class="main-content">
 
-            <section id="about" class="section">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-text">
-                    I am a Electrical and Electronics Engineer with a growing focus on AWS cloud technologies and DevOps fundamentals. I have hands-on experience with AWS services through internships and personal projects, where I worked on containerized applications, serverless workflows, and basic CI/CD pipelines. I am currently preparing for the AWS Solutions Architect – Associate certification and actively improving my skills in cloud infrastructure, automation, and reliability. I am eager to learn, open to feedback, and motivated to start my career as a Junior Cloud Engineer where I can grow by working closely with experienced teams.
-                </div>
-            </section>
+      <!-- Header -->
+      <header class="header">
+        <h1>Erdi Aslan</h1>
+        <h2 id="typewriter" class="typewriter"></h2>
 
-            <section id="skills" class="section">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>☁️ Cloud Technologies</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">AWS Lambda</span>
-                            <span class="skill-tag">ECS</span>
-                            <span class="skill-tag">EKS</span>
-                            <span class="skill-tag">S3</span>
-                            <span class="skill-tag">API Gateway</span>
-                            <span class="skill-tag">Fargate</span>
-                            <span class="skill-tag">Serverless</span>
-                            <span class="skill-tag">Terraform</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>🔧 DevOps & Tools</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">GitHub Actions</span>
-                            <span class="skill-tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="contact-info">
+          <div class="contact-item">📍 İstanbul, Turkey</div>
 
-            <section id="experience" class="section">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="experience-item">
-                    <h3>Cloud Engineer Intern</h3>
-                    <div class="experience-meta">Imona Technologies | İstanbul, Turkey | April 2025 - November 2025</div>
-                    <ul>
-                        <li>Deployed containerized backend services on AWS Fargate with ALB routing, IAM, and ECR, enabling scalable production-ready workloads.</li>
-                        <li>Built a serverless automation pipeline using Lambda, API Gateway, S3, and Aurora to process data and trigger AI-powered tasks.</li>
-                        <li>Developed Python automation scripts to streamline internal workflows and reduce manual operational steps.</li>
-                        <li>Implemented CI/CD pipelines using GitHub Actions and Docker, automating build and deployment stages.</li>
-                    </ul>
-                </div>
-            </section>
+          <div class="contact-item">
+            📧 <a href="mailto:erdias333ea@gmail.com">erdias333ea@gmail.com</a>
+          </div>
 
-            <section id="projects" class="section">
-                <h2 class="section-title">Projects</h2>
-                <div class="project-item">
-                    <h3>Fargate PoC</h3>
-                    <div class="project-diagram">
-                        <img 
-  src="https://raw.githubusercontent.com/Erdiaslan/Fargate-poc/main/fargate-poc.jpeg"
-  alt="AWS ECS Fargate PoC Architecture Diagram"
-  style="width:150%; max-width:600px; margin-top:12px; border-radius:18px;"
->
-                    </div>
-                    <p>This PoC shows how a Node.js application is deployed on AWS ECS Fargate without managing servers. User traffic is secured and distributed via AWS managed services, the application runs in private subnets, connects to a managed database, and is deployed automatically through CI/CD.</p>
+          <div class="contact-item">📱 +90 546 559 0822</div>
 
-                    <ul> 
-                        <li>Amazon CloudFront – CDN, SSL, caching</li>
-                        <li>AWS WAF – Web application security</li>
-                        <li>Application Load Balancer (ALB) – Traffic routing</li>
-                        <li>Amazon VPC – Public & private subnet isolation</li>
-                        <li>Amazon ECS (Fargate) – Serverless container runtime</li>
-                        <li>Amazon ECR – Docker image registry</li>
-                        <li>Amazon RDS (MySQL) – Managed relational database</li>
-                        <li>NAT Gateway – Controlled outbound internet access</li>
-                        <li>VPC Endpoints (ECR / S3) – Private AWS service access</li>
-                        <li>Amazon CloudWatch – Logs, metrics, alarms</li>
-                        <li>Amazon SNS – Alert notifications</li>
-                    </ul>
-                    <a href="https://github.com/Erdiaslan/Fargate-poc" target="_blank" class="project-link">→ View on GitHub</a>
-                </div>
-                <div class="project-item">
-                    <h3>Cloud Resume Challenge — Serverless Web Application</h3>
-                    <div class="project-diagram">
-                        <img 
-  src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/cloud-resume-cha.jpeg"
-  alt="Cloud Resume Challenge Architecture Diagram"
-  style="width:100%; max-width:600px; margin-top:12px; border-radius:8px;"
->
-                    </div>
-                    <p>This project is a fully serverless resume website built on AWS following the Cloud Resume Challenge. The frontend is hosted on S3 and delivered globally via CloudFront with SSL/TLS encryption. A visitor counter is implemented using API Gateway, Lambda, and DynamoDB, updating in real-time as users visit the site. The entire infrastructure is defined as code using Terraform and deployed through a CI/CD pipeline with GitHub Actions.</p>
-                    
-                    <ul>
-                        <li>Amazon S3 — Static website hosting</li>
-                        <li>Amazon CloudFront — Global CDN with SSL/TLS</li>
-                        <li>AWS Certificate Manager — SSL certificate management</li>
-                        <li>Amazon Route 53 — DNS and domain management</li>
-                        <li>Amazon API Gateway — RESTful API endpoint</li>
-                        <li>AWS Lambda (Python) — Serverless visitor counter logic</li>
-                        <li>Amazon DynamoDB — NoSQL database for visitor count</li>
-                        <li>Terraform — Infrastructure as Code (IaC)</li>
-                        <li>GitHub Actions — CI/CD automation</li>
-                    </ul>
-                   
-                </div>
-                <div class="project-item">
-                    <h3>AI Avatar — AI-Driven Video Automation</h3>
-                    <div class="project-diagram">
-                        <img 
-  src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/PHOTO-2025-09-08-15-15-07.jpg"
-  alt="AI Avatar Serverless Pipeline Diagram"
-  style="width:100%; max-width:400px; margin-top:12px; border-radius:8px;"
->
-                    </div>
-                    <p>This project is a serverless AI video generation pipeline. It is triggered by EventBridge (scheduled) or API Gateway (on-demand) and runs on AWS Lambda. Lambda generates personalized text with OpenAI, converts it to MP3, stores it in S3, and sends it to Heygen to create an avatar video. The video is watermarked using ffmpeg, saved to S3, and a webhook notifies the Imona platform when the video is ready.</p>
-                    
-                    <ul>
-                        <li>EventBridge</li>
-                        <li>API Gateway</li>
-                        <li>AWS Lambda</li>
-                        <li>OpenAI API</li>
-                        <li>Amazon S3</li>
-                        <li>Heygen API</li>                 
-                        <li>Webhook (Imona Platform)</li>
-                    </ul>
-                </div>
-            </section>
+          <div class="contact-item">
+            🔗 <a href="https://github.com/Erdiaslan" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
 
-            <section id="education" class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="education-item">
-                    <h3>Bachelor's Degree in Electrical and Electronics Engineering</h3>
-                    <div class="education-meta">Trakya University | Edirne, Turkey</div>
-                </div>
-            </section>
+          <div class="contact-item">
+            💼 <a href="https://www.linkedin.com/in/erdiaslan-073a99211/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
 
-            <section id="certifications" class="section">
-                <h2 class="section-title">Certifications</h2>
-                <div class="cert-item">
-                    <div class="cert-logo">
-                        <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png" alt="AWS Cloud Practitioner">
-                    </div>
-                    <div class="cert-content">
-                        <h3>AWS Certified Cloud Practitioner</h3>
-                        <div class="cert-meta">Amazon Web Services</div>
-                        <a href="https://www.credly.com/badges/7afaf715-ce25-4fad-bd03-c8bfff5305d7/linked_in_profile" target="_blank" class="cert-link">→ View Credential</a>
-                    </div>
-                </div>
-                <div class="cert-item cert-upcoming">
-                    <div class="cert-logo">
-                        <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="AWS Solutions Architect">
-                    </div>
-                    <div class="cert-content">
-                        <h3>AWS Certified Solutions Architect – Associate</h3>
-                        <div class="cert-meta">Amazon Web Services</div>
-                        <div class="cert-status">Currently Preparing</div>
-                    </
+          <div class="contact-item">
+            👀 Visitors: <span id="counter">Loading...</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text">
+          I am an Electrical and Electronics Engineer with a growing focus on AWS cloud technologies and DevOps fundamentals.
+          I have hands-on experience with AWS services through internships and personal projects, where I worked on containerized
+          applications, serverless workflows, and basic CI/CD pipelines. I am currently preparing for the AWS Solutions Architect – Associate
+          certification and actively improving my skills in cloud infrastructure, automation, and reliability. I am eager to learn, open to feedback,
+          and motivated to start my career as a Junior Cloud Engineer where I can grow by working closely with experienced teams.
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>☁️ Cloud Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS Lambda</span>
+              <span class="skill-tag">S3</span>
+              <span class="skill-tag">API Gateway</span>
+              <span class="skill-tag">CloudFront</span>
+              <span class="skill-tag">Route 53</span>
+              <span class="skill-tag">DynamoDB</span>
+              <span class="skill-tag">ECS</span>
+              <span class="skill-tag">Fargate</span>
+              <span class="skill-tag">Terraform</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>🔧 DevOps & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="experience-item">
+          <h3>Cloud Engineer Intern</h3>
+          <div class="experience-meta">Imona Technologies | İstanbul, Turkey | April 2025 - November 2025</div>
+          <ul>
+            <li>Deployed containerized backend services on AWS Fargate with ALB routing, IAM, and ECR.</li>
+            <li>Built a serverless automation pipeline using Lambda, API Gateway, S3, and Aurora for AI-powered workflows.</li>
+            <li>Developed Python automation scripts to streamline internal workflows and reduce manual steps.</li>
+            <li>Implemented CI/CD pipelines using GitHub Actions and Docker for build & deployment automation.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-item">
+          <h3>Fargate PoC</h3>
+          <div class="project-diagram">
+            <img
+              src="https://raw.githubusercontent.com/Erdiaslan/Fargate-poc/main/fargate-poc.jpeg"
+              alt="AWS ECS Fargate PoC Architecture Diagram"
+              style="width:100%; max-width:700px; margin-top:12px; border-radius:18px;"
+            />
+          </div>
+          <p>
+            A PoC showing how a Node.js app runs on ECS Fargate without managing servers, with CI/CD and managed networking components.
+          </p>
+          <a href="https://github.com/Erdiaslan/Fargate-poc" target="_blank" rel="noopener noreferrer" class="project-link">
+            → View on GitHub
+          </a>
+        </div>
+
+        <div class="project-item">
+          <h3>Cloud Resume Challenge — Serverless Web Application</h3>
+          <div class="project-diagram">
+            <img
+              src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/cloud-resume-cha.jpeg"
+              alt="Cloud Resume Challenge Architecture Diagram"
+              style="width:100%; max-width:700px; margin-top:12px; border-radius:12px;"
+            />
+          </div>
+          <p>
+            A fully serverless resume website on AWS. CloudFront + S3 for hosting, Route 53 + ACM for domain/SSL, and a visitor counter using API Gateway + Lambda + DynamoDB.
+          </p>
+        </div>
+
+        <div class="project-item">
+          <h3>AI Avatar — AI-Driven Video Automation</h3>
+          <div class="project-diagram">
+            <img
+              src="https://raw.githubusercontent.com/Erdiaslan/Erdiaslan/main/PHOTO-2025-09-08-15-15-07.jpg"
+              alt="AI Avatar Serverless Pipeline Diagram"
+              style="width:100%; max-width:500px; margin-top:12px; border-radius:12px;"
+            />
+          </div>
+          <p>
+            A serverless pipeline triggered by EventBridge or API Gateway. Lambda generates content, stores assets in S3, calls Heygen, watermarks via ffmpeg, and notifies the platform via webhook.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+          <h3>Bachelor's Degree in Electrical and Electronics Engineering</h3>
+          <div class="education-meta">Trakya University | Edirne, Turkey</div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cert-item">
+          <div class="cert-logo">
+            <img
+              src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+              alt="AWS Cloud Practitioner"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>AWS Certified Cloud Practitioner</h3>
+            <div class="cert-meta">Amazon Web Services</div>
+            <a
+              href="https://www.credly.com/badges/7afaf715-ce25-4fad-bd03-c8bfff5305d7/linked_in_profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cert-link"
+            >
+              → View Credential
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-item cert-upcoming">
+          <div class="cert-logo">
+            <img
+              src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png"
+              alt="AWS Solutions Architect Associate"
+            />
+          </div>
+          <div class="cert-content">
+            <h3>AWS Certified Solutions Architect – Associate</h3>
+            <div class="cert-meta">Amazon Web Services</div>
+            <div class="cert-status">Currently Preparing</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JS (çok önemli: burası yoksa counter/typewriter çalışmaz) -->
+  <script src="assets/script.js"></script>
+</body>
+</html>
